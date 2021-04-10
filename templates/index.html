@@ -1,0 +1,60 @@
+<html>
+<style>
+    form {
+         background-color: #FFF;
+         height: 180px;
+         width: 600px;
+         margin-right: auto;
+         margin-left: auto;
+         margin-top: 10px;
+         border-top-left-radius: 10px;
+         border-top-right-radius: 10px;
+         padding: 0px;
+        }
+    
+    label {
+        text-align: right;
+        clear: both;
+        display: inline-block;
+        float:center;
+        width: 200px;
+        margin-right:10px;
+        margin-left: -180px;
+        }
+
+    body{
+     background-image:url('C:/Users/rajat-negi/Desktop/self case studies/deployment/M5/static/images/walmart.jpg');
+     background-attachment:fixed;
+     
+     }
+</style>
+<body>
+    <center>
+    <h3>M5 Forecasting-Accuracy</h3>
+
+<div>
+  <form action="/predict" method="POST">
+    <label for="state_id">State_id:</label>
+    <input type="text" id="state_id" name="state_id">
+    <br>
+    <label for="store_id">Store_id:</label>
+    <input type="text" id="store_id" name="store_id">
+    <br>
+    <label for="item_id">Item_id:</label>
+    <input type="text" id="item_id" name="item_id">
+    <br>
+    <label for="cat_id">Category_id:</label>
+    <input type="text" id="cat_id" name="category_id">
+    <br>
+    <label for="dept_id">Department_id:</label>
+    <input type="text" id="dept_id" name="department_id">
+    <br>
+    <label for="date">Date:</label>
+    <input type="date" id="date" name="date">
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+</div>
+</center>
+</body>
+</html>

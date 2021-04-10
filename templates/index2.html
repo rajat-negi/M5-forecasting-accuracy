@@ -1,0 +1,74 @@
+<html>
+<style>
+body{
+ background-image:url('templates/walmart.jpg');
+ background-attachment:fixed;
+ }
+</style>
+<body>
+	<center>
+    <h3>M5 Forecasting-Accuracy</h3>
+
+<div>
+  <form action="/predict" method="POST">
+
+    <label><B>State_id:</B></label><br>
+    <input type= "radio" id= 'CA' name='state_id' value='CA'>
+    <label for="CA">California</label>
+    <input type= "radio" id= 'WI' name='state_id' value='WI'>
+    <label for="WI">Wisconsin</label>
+    <input type= "radio" id= 'TX' name='state_id' value='TX'>
+    <label for="TX">Texas</label>
+    <br>
+
+
+
+    <label><B>Store_id:</B></label><br>
+    <input type= "radio" id= 'CA_1' name='store_id' value='CA_1'>
+    <label for="CA_1">California store 1</label>
+    <input type= "radio" id= 'CA_2' name='store_id' value='CA_2'>
+    <label for="CA_2">California store 2</label>
+    <input type= "radio" id= 'CA_3' name='store_id' value='CA_3'>
+    <label for="CA_3">California store 3</label>
+    <input type= "radio" id= 'CA_4' name='store_id' value='CA_4'>
+    <label for="CA_4">California store 4</label>
+   
+    <input type= "radio" id= 'TX_1' name='store_id' value='TX_1'>
+    <label for="TX_1">Texas store 1</label>
+    <br>
+
+    <input type= "radio" id= 'TX_2' name='store_id' value='TX_2'>
+    <label for="TX_2">Texas store 2</label>
+    <input type= "radio" id= 'TX_3' name='store_id' value='TX_3'>
+    <label for="TX_3">Texas store 3</label>
+
+    <input type= "radio" id= 'WI_1' name='store_id' value='WI_1'>
+    <label for="WI_1">Wisconsin store 1</label>
+    <input type= "radio" id= 'WI_2' name='store_id' value='WI_2'>
+    <label for="WI_2">Wisconsin store 2</label>
+    <input type= "radio" id= 'WI_3' name='store_id' value='WI_3'>
+    <label for="WI_3">Wisconsin store 3</label>
+    <br>
+    
+
+
+
+    <label><B>Item_id:</B></label><br>
+    <input type="text" id="item_id" name="item_id">
+    <br>
+    <label><B>Category_id:</B></label><br>
+    <input type="text" id="cat_id" name="category_id">
+    <br>
+    <label><B>Department_id:</B></label><br>
+    <input type="text" id="dept_id" name="department_id">
+    <br>
+    <label><B>Date:</B></label><br>
+    <input type="date" id="date" name="date">
+    <br><br>
+    <input type="submit" value="Submit">
+  </form>
+
+</div>
+</center>
+</body>
+</html>
